@@ -2,10 +2,11 @@ body {
   font-family: "Manrope", "Arial Narrow", Arial, sans-serif;
 }
 
-h1 {
+h1.text-wrapper {
   color: #121212;
 
   /* H1 */
+  width: 956px;
   font-family: Manrope;
   font-size: 60px;
   font-style: normal;
@@ -15,10 +16,11 @@ h1 {
   margin-bottom: 30px;
 }
 
-h2 {
+h2.text-wrapper-h2 {
   color: #121212;
 
   /* Tag */
+  margin-top: 150px;
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
@@ -68,6 +70,7 @@ h2 {
   line-height: normal;
   letter-spacing: -0.6px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .container {
