@@ -1,11 +1,18 @@
-body {
-  font-family: "Manrope", "Arial Narrow", Arial, sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
-h1.title__text-wrapper {
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.hero {
+  margin-bottom: 150px;
+}
+
+.hero__title {
   color: #121212;
   margin-bottom: 30px;
-  margin-top: 128px;
   /* H1 */
   width: 956px;
   font-family: Manrope;
@@ -14,11 +21,9 @@ h1.title__text-wrapper {
   font-weight: 400;
   line-height: 60px; /* 100% */
   letter-spacing: -1.8px;
- 
-
 }
 
-h2.description {
+.about__title {
   color: #121212;
   font-family: Manrope;
   font-size: 18px;
@@ -30,14 +35,13 @@ h2.description {
   margin-bottom: 30px;
 }
 
-.title__img-box {
+.hero__box {
   position: relative;
-  width: 1150px;
+  width: 100%;
   height: 500px;
-  background-image: url(../resources/photodivan.png);
-  background-repeat: no-repeat;  
 }
 
+/*
 .title__img {
   position: absolute;
   bottom: 40px;
@@ -45,12 +49,16 @@ h2.description {
   width: 430px;
   height: 81px;
   color: white;
-  /* P */
   
-
 }
+*/
 
-.title__img-text {
+.hero__box-text {
+  width: 430px;
+  color: #FFF;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
   font-family: Manrope;
   font-size: 20px;
   font-style: normal;
@@ -59,15 +67,10 @@ h2.description {
   letter-spacing: -0.6px;
 }
 
-.btn {
-  font-family: "Manrope", "Arial Narrow", Arial, sans-serif;
-  margin-top: 30px;
-  
-  height: 67px;
-  display: inline-flex;
+.about__btn {
+  margin-bottom: 150px;
+  display: inline-block;
   padding: 20px 40px;
-  align-items: flex-start;
-  gap: 10px;
   border-radius: 5px;
   background: var(--Accent, #ad1818);
   color: #fff;
@@ -81,47 +84,36 @@ h2.description {
   
 }
 
-.title {
-  padding-left: 125px;
-  padding-bottom: 150px;
-  width: 100%px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  
-}
-
-p.description__text {
-  display: inline-block;
-  font-family: Manrope;
+.about__text {
+  width: 1048px;
   font-size: 45px;
   font-weight: 400;
   line-height: 61px;
   letter-spacing: -0.03em;
-  text-align: left;
-}
-
-.item{
-  margin-bottom: 90px;
-}
-
-.item__title {
   margin-bottom: 30px;
 }
 
-.item__image-divan2 {
-  margin-bottom: 15px;
-  width: 1150px;
-  height: 450px;
+.projects__item{
+  margin-bottom: 90px;
 }
 
-.item__description {
+.projects__title {
+  margin-bottom: 30px;
+}
+
+.projects__item-image {
+  margin-bottom: 15px;
+  
+}
+
+.projects__item-description {
   margin-bottom: 15px;
   font-size: 30px;
   font-weight: 400;
   letter-spacing: -0.9px;
 }
 
-.item__link {
+.projects__item-link {
   color: var(--Accent, #AD1818);
   font-size: 20px;
   font-weight: 400;
@@ -129,8 +121,9 @@ p.description__text {
   text-decoration: none;
 }
 
-.item__btn-full {
+.projects__btn {
   width: 100%;
+  margin-bottom: 150px;
   height: 153px;
   border-radius: 5px;
   border: 1px solid var(--Accent, #AD1818);
@@ -142,19 +135,20 @@ p.description__text {
   cursor: pointer;
 }
 
-.item__btn-full:hover {
+.projects__btn:hover {
   color: #fff;
   background-color: #AD1818;
 }
 
-.section {
+.services {
+  min-width: 1400px;
   padding: 151px 127px;
   width: 100%px;
   height: 1844px;
   background-color: #121212;
 }
 
-h2.section__title {
+.services__title {
   margin-bottom: 34px;
   padding-left: 2px;
   color: #FFF;
@@ -163,7 +157,7 @@ h2.section__title {
   letter-spacing: -0.54px;
 }
 
-.section__services {
+.services__box {
   margin-bottom: 60px;
 }
 
@@ -171,14 +165,89 @@ h2.section__title {
   margin-bottom: 0px;
 }
 
-.section__img {
+.services__box-img {
   margin-bottom: 15px;
-  width: 1150px;
+  
 }
 
-.section__text {
+.services__box-text {
   color: #FFF;
   font-size: 30px;
   font-weight: 400;
   letter-spacing: -0.9px;
+}
+
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav-container {
+  margin: 0 auto;
+  padding-left: 125.65px;
+  padding-top: 32.82px;
+}
+
+.header{
+  margin-bottom: 70px;
+
+}
+
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__link {
+  display: inline-block;
+}
+
+.nav__list {
+  display: flex;
+  gap: 0 60px;
+}
+
+.logo {
+  display: block;
+  width: 127px;
+}
+
+.nav-link {
+  
+  color: #121212;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.54px;
+}
+
+.nav-link_active {
+  color:#000000;
+  text-decoration: underline;
+}
+
+.project {
+  min-width: 1400px;
+  position: relative;
+  height: 717px;
+  background-image: url('../resources/interrier.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.project__text {
+  width: 443px;
+  height: 82px;
+  position: absolute;
+  left: 125px;
+  bottom: 60px;
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.9px;
+  line-height: normal;
 }
