@@ -12,7 +12,7 @@ body {
 
 .hero__title {
   color: #121212;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   /* H1 */
   width: 956px;
   font-family: Manrope;
@@ -68,7 +68,7 @@ body {
 }
 
 .about__btn {
-  margin-bottom: 150px;
+  margin-bottom: 156px;
   display: inline-block;
   padding: 20px 40px;
   border-radius: 5px;
@@ -94,20 +94,23 @@ body {
 }
 
 .projects__item{
-  margin-bottom: 90px;
+  margin-bottom: 93px;
 }
 
 .projects__title {
-  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.54px;
+  margin-bottom: 31px;
 }
 
 .projects__item-image {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   
 }
 
 .projects__item-description {
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   font-size: 30px;
   font-weight: 400;
   letter-spacing: -0.9px;
@@ -131,7 +134,7 @@ body {
   background-color: #fff;
   font-size: 30px;
   font-weight: 400;
-  letter-spacing: -0.9px;
+ 
   cursor: pointer;
 }
 
@@ -142,14 +145,14 @@ body {
 
 .services {
   min-width: 1400px;
-  padding: 151px 127px;
-  width: 100%px;
+  padding: 154px 127px;
+  width: 100%;
   height: 1844px;
   background-color: #121212;
 }
 
 .services__title {
-  margin-bottom: 34px;
+  margin-bottom: 38px;
   padding-left: 2px;
   color: #FFF;
   font-size: 18px;
@@ -158,7 +161,7 @@ body {
 }
 
 .services__box {
-  margin-bottom: 60px;
+  margin-bottom: 64px;
 }
 
 .section__services:nth-last-child(1) {
@@ -166,7 +169,7 @@ body {
 }
 
 .services__box-img {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   
 }
 
@@ -181,7 +184,7 @@ body {
 .container {
   max-width: 1150px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0;
 }
 
 .nav-container {
@@ -197,6 +200,7 @@ body {
 
 
 .header__inner {
+  margin-top: 32.82px;
   display: flex;
   justify-content: space-between;
 }
@@ -206,6 +210,7 @@ body {
 }
 
 .nav__list {
+  margin-top: 3px;
   display: flex;
   gap: 0 60px;
 }
@@ -250,4 +255,100 @@ body {
   font-weight: 400;
   letter-spacing: -0.9px;
   line-height: normal;
+}
+
+.contacts {
+  height: 365px;
+
+}
+
+.contacts__box {
+  margin-top: 190px;
+}
+
+.contacts__title {
+  position: relative;
+  margin-bottom: 32px;
+  color: #121212;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+}
+
+.contacts__title::before {
+  position: absolute;
+  content: '';
+  display: block;
+  background-image: url(../resources/iphone.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  left: -4px;
+  bottom: 32px;
+}
+
+.contacts__phone-box {
+  margin-bottom: 30px;
+}
+
+.contacts__phone {
+  
+  color: #121212;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px; /* 100% */
+  letter-spacing: -1.1px;
+  text-decoration: none;
+}
+
+.contacts__email {
+  color: #121212;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px; /* 100% */
+  letter-spacing: -1.8px;
+  opacity: 0.5;
+}
+
+.footer {
+  background-color: #121212;
+  height: 229px;
+  min-width: 1400px;
+  width: 100%;
+}
+
+.footer__nav-link {
+  margin-top: 60px;
+  margin-bottom: 87px;
+  display: inline-block;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.54px;
+  text-decoration: none;
+}
+
+.footer__nav-link:last-child {
+  margin-right: 0;
+}
+
+.footer__nav-link_active {
+  opacity: 0.5;
+}
+
+.footer__text {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+  opacity: 0.5;
+}
+
+.footer__box {
+  display: flex;
+  justify-content: center;
 }
