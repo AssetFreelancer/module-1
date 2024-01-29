@@ -203,28 +203,28 @@ text-decoration: none;
 
 .services__box_1 {
   background-image: url('/new_module-1/resources/service-1.png'), 
-  url('/new_module-1/resources/service-2.png'), url(../resources/service-3.png);
+  url('/new_module-1/resources/service-2.png'), url(/new_module-1/resources/service-3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .services__box_2 {
   background-image: url('/new_module-1/resources/service-2.png'), 
-  url('/new_module-1/resources/service-2.png'), url(../resources/service-3.png);
+  url('/new_module-1/resources/service-2.png'), url(/new_module-1/resources/service-3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .services__box_3 {
   background-image: url('/new_module-1/resources/service-3.png'), 
-  url('/new_module-1/resources/service-2.png'), url(../resources/service-3.png);
+  url('/new_module-1/resources/service-2.png'), url(/new_module-1/resources/service-3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .services__box_4 {
   background-image: url('/new_module-1/resources/service-4.png'), 
-  url('/new_module-1/resources/service-2.png'), url(../resources/service-3.png);
+  url('/new_module-1/resources/service-2.png'), url(/new_module-1/resources/service-3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -353,6 +353,10 @@ letter-spacing: -0.66px;
   line-height: normal;
 }
 
+.gallery-section {
+  position: relative;
+}
+
 .gallery {
   position: relative;
 }
@@ -389,7 +393,7 @@ letter-spacing: -0.66px;
 }
 
 .galleery__controls-wrapper {
-  position: absolute;
+  position: relative;
   top: 515px;
   width: 100%;
 }
@@ -433,58 +437,17 @@ background-image: url('../resources/gallery-3.png');}
 }
 
 .contacts {
-  height: 459px;
+  position: static;
 }
 
-.contacts__box {
-  margin-top: 190px;
-}
 
-.contacts__title {
-  margin-bottom: 36px;
-  color: #121212;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: -0.54px;
-  text-transform: uppercase;
-}
 
-.contacts__title::before {
-  content: '';
-  display: block;
-  background-image: url(../resources/iphone.png);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 24px;
-  height: 24px;
-  left: -5px;
-  bottom: 34px;
-}
 
-.contacts__phone-box {
-  margin-bottom: 30px;
-}
 
-.contacts__phone {
-  color: #121212;
-  font-size: 60px;
-  font-weight: 400;
-  line-height: 60px; /* 100% */
-  letter-spacing: -1.1px;
-  text-decoration: none;
-}
 
-.contacts__email {
-  color: #121212;
-  font-size: 60px;
-  font-weight: 400;
-  line-height: 60px; /* 100% */
-  letter-spacing: -1.8px;
-  opacity: 0.5;
-  text-decoration: none;
-  border-bottom: 2px solid #121212;
-}
+
+
+
 
 .footer {
   background-color: #121212;
