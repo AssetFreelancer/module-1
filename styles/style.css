@@ -202,29 +202,25 @@ text-decoration: none;
 }
 
 .services__box_1 {
-  background-image: url('/new_module-1/resources/service-1.png'), 
-  url('/new_module-1/resources/service-2.png'), url(/new_module-1/resources/service-3.png);
+  background-image: url('../resources/service-1.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .services__box_2 {
-  background-image: url('/new_module-1/resources/service-2.png'), 
-  url('/new_module-1/resources/service-2.png'), url(/new_module-1/resources/service-3.png);
+  background-image: url('../resources/service-2.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .services__box_3 {
-  background-image: url('/new_module-1/resources/service-3.png'), 
-  url('/new_module-1/resources/service-2.png'), url(/new_module-1/resources/service-3.png);
+  background-image: url('../resources/service-3.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .services__box_4 {
-  background-image: url('/new_module-1/resources/service-4.png'), 
-  url('/new_module-1/resources/service-2.png'), url(/new_module-1/resources/service-3.png);
+  background-image: url('../resources/service-4.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
