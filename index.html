@@ -46,11 +46,9 @@
     <main>
         <section class="hero">
             <div class="container">
-              <div class="hero__title">
-                <h1 class="hero__title-text">
+                <h1 class="hero__title">
                     Современные и стильные интерьеры для комфортной жизни
                 </h1>
-              </div>
               <div class="hero__box">
                 <p class="hero__box-text">
                   Мы - команда квалифицированных дизайнеров и архитекторов, занимающихся разработкой и реализацией дизайн-проектов
@@ -253,25 +251,29 @@
         </div>
 </section>
      
-      <section id="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__box">
               <p class="contacts__title">
                 Контакты
               </p>  
-      
-              <p class="contacts__phone-box">
-                <a class="contacts__phone" href="tel:+7935895535">+7 935  895-45-35</a>
-              </p>
-      
-              <p class="contacts__email-box">
-                <a class="contacts__email" href="mailto:hello@mail.com">hello@mail.com</a>
-              </p>
+              <div class="row_contacts">
+                <div class="col">
+                  <div class="contacts__phone-box">
+                    <a class="contacts__phone" href="tel:+7935895535">+7 935  895-45-35</a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="contacts__email-box">
+                    <a class="contacts__email" href="mailto:hello@mail.com">hello@mail.com</a>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
       </section>
  
- <!--
+ 
       <section class="footer">
         <div class="container">
             <div class="footer__box">
@@ -297,7 +299,7 @@
       
       
       </section>
-      -->
+      
 
     </main>
     <script src="gallery.js"></script>
