@@ -74,33 +74,34 @@
 
         <section class="projects">
           <div id="projects" class="container">
-          <h2 class="projects__title">ПРОЕКТЫ</h2>
-          <div class="projects__item">
-          <img class="projects__item-image" src="resources/image-divan-2.png">
-          <p class="projects__item-description">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</p>
-          <a class="projects__item-link" href="/">Подробнее →</a>
-        </div>
-    
-          <div class="projects__item">
+          <h2 class="projects__title">ПРОЕКТЫ</h2>  
+        <ul class="projects__item">
+          <li>
+            <img class="projects__item-image" src="resources/image-divan-2.png">
+            <p class="projects__item-description">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</p>
+            <a class="projects__item-link" href="/">Подробнее →</a>
+          </li>
+          <li>
             <img class="projects__item-image" src="resources/image-divan3.png">
             <p class="projects__item-description">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</p>
             <a class="projects__item-link" href="/">Подробнее →</a>
-          </div>
-    
-          <div class="projects__item">
+          </li>
+          <li>
             <img class="projects__item-image" src="resources/image-divan-4.png">
             <p class="projects__item-description">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</p>
             <a class="projects__item-link" href="/">Подробнее →</a>
-          </div>
+          </li>
+        </ul>
+
           <button class="projects__btn">Смотреть все проекты</button>
         </div>
       </section>
     
       
 <section class="services">
-        <div id="services" class="container">
-          <h2 class="services__title">УСЛУГИ</h2>
-          <div class="services__box-img-box">
+  <div id="services" class="container">
+    <h2 class="services__title">УСЛУГИ</h2>
+          <!-- <div class="services__box-img-box">
             <div class="services__box services__box_1">
               <div class="lable-wrapper">
                 <div class="lable">
@@ -108,54 +109,79 @@
                 </div>
               </div>
              <p class="services__box-text">Планировочное решение</p> 
-            
             </div>
-
-      
-        
           <div class="services__box services__box_2">
           <div class="lable-wrapper">
           <div class="lable">
             <p class="lable-text">от 3000₽/м²</p>
         </div></div>
           <p class="services__box-text">Дизайн-проект</p>
-        </div>
-       
+        </div> 
           <div class="services__box services__box_3">
-          
           <div class="lable-wrapper">
           <div class="lable">
             <p class="lable-text">от 30 000₽/мес</p>
         </div></div>
          <p class="services__box-text">Авторский надзор</p>
-        
       </div>
-      
-        
           <div class="services__box services__box_4">
-            
           <div class="lable-wrapper">
           <div class="lable">
             <p class="lable-text">5% от стоимости</p>
-        
       </div></div>
         <p class="services__box-text">Комплектация</p>
-      
-        </div>
-      
-      
-        </div>
+        </div> -->
+
+    <ul class="services__box-img-box">
+      <li class="services__box-img">
+        <img src="./resources/service-1.png" alt="Сервис 1" class="services__box">
+        <div class="lable-wrapper">
+              <h2 class="lable">от 2500₽/м²</h2>
+          </div> 
+        <p class="services__box-text">Планировочное решение</p> 
+      </li>
+      <li class="services__box-img">
+        <img src="./resources/service-2.png" alt="Сервис 1" class="services__box">
+        <div class="lable-wrapper">
+          <h2 class="lable">от 3000₽/м²</h2>
+      </div> 
+        <p class="services__box-text">Дизайн-проект</p>
+      </li>
+    </ul>
+    <ul class="services__box-img-box">
+      <li class="services__box-img">
+        <img src="./resources/service-3.png" alt="Сервис 1" class="services__box">
+        <div class="lable-wrapper">
+          <h2 class="lable">от 30 000₽/мес</h2>
+      </div> 
+        <p class="services__box-text">Авторский надзор</p>
+      </li>
+      <li class="services__box-img">
+        <img src="./resources/service-4.png" alt="Сервис 1" class="services__box">
+        <div class="lable-wrapper">
+          <h2 class="lable">5% от стоимости</h2>
+      </div> 
+        <p class="services__box-text">Комплектация</p>
+      </li>
+    </ul>
+  </div>
       
   <button class="services__btn">Заказать услугу</button>
-    
+  <!-- <div class="popup js-popup">
+    <div class="popup__content">
+      <img src="./resources/icons_cross.png" alt="" class="popup__close-btn">
+      <h1 class="popup__title">Заказать услугу</h1>
+      <p class="popup__text">Заполните форму, мы свяжемся с вами в течение суток      </p>
+    </div>
+  </div> -->
       </section>
 
       <section class="reviews">
-        <div id="reviews" class="container">
+         <div id="reviews" class="container">
           <div class="reviews__inner">
             <h2 class="reviews__title">отзывы</h2>
-              <div class="row">
-                <div class="col">
+              <ul class="row">
+                <li class="col">
                   <div class="reviews__box">
                     <p class="reviews__box-title">Ксения, проект 65 кв.м.</p>
                     <p class="reviews__box-text">Хочу искренне поблагодарить Вас за работу, проделанную на высоком уровне! Нам с мужем было очень приятно с Вами работать! Спасибо за Ваше умение правильно слышать пожелания своих клиентов и выполнять работу, которая превосходит все ожидания! Мы даже не надеялись, что на 34 кв.м. кто-то сможет нам грамотно разместить все, что мы хотим и даже больше!
@@ -163,29 +189,30 @@
                       <br><br>Вам удалось это просто превосходно! Нам лишь осталось воплотить красоту, которую Вы нам создали в жизнь и поделиться с Вами результатом!
                       </p>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="reviews__box">
+                </li>
+              <li class="col">
+                <div class="reviews__box">
                   <p class="reviews__box-title">Регина, проект 89 кв.м.</p>
                   <p class="reviews__box-text">Спасибо большое за такой классный проект! Все стильно, круто, продумано! Очень приятно было с вами работать! Спасибо, что терпели наши «хочу это, хочу то» в поисках идеального для нас ремонта. Здорово, что мы нашли такого основательного, ответственного и внимательного к деталям дизайнера!
       
                     <br><br>Хочется скорее реализовать проект и наслаждаться современной, функциональной и красивой квартирой! Будем рекомендовать Вас всем друзьям и знакомым!
-                    </p></div>
-                
-                </div>
-              </div>
-              
-              <div class="row">
-                
-                  <div class="reviews__box">
-                    <p class="reviews__box-title">Яна, проект 120 кв.м.</p>
-                    <p class="reviews__box-text reviews__box_big">Хотелось бы сказать большое спасибо за проделанную работу! В задачу Марины входила разработка дизайн-проекта в минимальные сроки, и мне, конечно, не хотелось при этом потерять качество выполнения работы. Но волнения были напрасны: все вопросы решались оперативно, всегда предлагалось несколько вариантов решения, а также предоставлялись комментарии, какой способ решения будет более подходящим.
-                      <br><br>
-                      В итоге проект был сдан в оговоренный срок, и мне просто не терпится приступить к его реализации! Проект получился очень стильным и современным! Буду рекомендовать Вас тем, кому еще предстоит это непростое дело - ремонт!
                     </p>
-              </div>
+                  </div>
+              </li>
+            </ul>
+            <ul class="row">
+              <div class="reviews__box">
+                <p class="reviews__box-title">Яна, проект 120 кв.м.</p>
+                <p class="reviews__box-text reviews__box_big">Хотелось бы сказать большое спасибо за проделанную работу! В задачу Марины входила разработка дизайн-проекта в минимальные сроки, и мне, конечно, не хотелось при этом потерять качество выполнения работы. Но волнения были напрасны: все вопросы решались оперативно, всегда предлагалось несколько вариантов решения, а также предоставлялись комментарии, какой способ решения будет более подходящим.
+                  <br><br>
+                  В итоге проект был сдан в оговоренный срок, и мне просто не терпится приступить к его реализации! Проект получился очень стильным и современным! Буду рекомендовать Вас тем, кому еще предстоит это непростое дело - ремонт!
+                </p>
+          </div>
+            </ul>
            </div>
-        </div>
+        </div> 
+
+
       </section>
       
       <section class="gallery-section">
