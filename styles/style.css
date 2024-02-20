@@ -19,6 +19,7 @@ line-height: normal;
   }
 
   .header__inner {
+    position: relative;
     margin-top: 32.82px;
     display: flex;
     justify-content: space-between;
@@ -52,6 +53,36 @@ line-height: normal;
     color:#000000;
     border-bottom: 1px solid #000000;
   }
+
+.burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s easy;
+}
+
+.burger__content {
+  width: 80%;
+  height: 100%;
+  background-color: white;
+}
+
+.burger_open {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+.burger__btn {
+  display: none;
+}
 
 .hero {
 margin-bottom: 150px;
@@ -618,8 +649,26 @@ margin-bottom: 60px;
 
 @media (max-width: 961px) {
   .container {
-    padding: 0;
     max-width: 100%;
+  }
+
+  .burger__btn {
+    width: 40px;
+    height: 40px;
+    right: 0;
+    display: block;
+    position: absolute;
+    background-image: url('../resources/burger.png');
+    background-repeat: no-repeat;
+    z-index: 100;
+  }
+
+ .burger-btn_open {
+  background-image: url('../resources/icons_cross.png');
+ }
+
+  .nav {
+    display: none;
   }
 
   .hero {
