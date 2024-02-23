@@ -68,7 +68,54 @@ line-height: normal;
     transition: all 0.2s easy;
 }
 
+.burger_logo {
+  width: 156px;
+  margin-bottom: 50px;
+}
+
+.burger_nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 90px;
+}
+
+.burger_nav__link {
+  color: #121212;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 34px;  
+  letter-spacing: -0.54px;
+}
+
+.burger_contacts {
+  color: rgb(0, 0, 0);
+font-size: 16px;
+line-height: 22px;
+letter-spacing: -0.03em;
+text-align: left;
+opacity: 0.5;
+}
+
+.burger_phone {
+  color: rgb(18, 18, 18);
+font-size: 20px;
+line-height: 45.62px;
+letter-spacing: -0.03em;
+text-align: left;
+text-transform: uppercase;
+}
+
+.burger_email {
+  color: rgb(18, 18, 18);
+font-size: 20px;
+line-height: 25.62px;
+letter-spacing: -0.03em;
+text-align: left;
+}
+
 .burger__content {
+  padding: 80px 30px;
   width: 80%;
   height: 100%;
   background-color: white;
@@ -314,8 +361,8 @@ text-decoration: none;
 
 .row_contacts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 50px;
 }
 
 .reviews__box {
@@ -464,6 +511,7 @@ text-transform: uppercase;
 }
 
 .contacts__phone {
+  position: relative;
   color: var(--Text, #121212);
 font-size: 45px;
 line-height: 60px; /* 133.333% */
@@ -472,11 +520,7 @@ text-decoration: none;
 
 }
 
-.contacts__phone-box {
-  position: absolute;
-}
-
-.contacts__phone-box:before{
+.contacts__phone:before{
   position: absolute;
   content: '';
   display: block;
@@ -491,6 +535,7 @@ text-decoration: none;
 }
 
 .contacts__email {
+  position: relative;
   color: var(--Text, #121212);
 /* H1 */
 font-size: 60px;
@@ -501,11 +546,7 @@ text-decoration: underline;
 text-underline-offset: 10px;
 }
 
-.contacts__email-box {
-  position: absolute;
-}
-
-.contacts__email-box::before {
+.contacts__email::before {
   position: absolute;
   content: '';
   display: block;
@@ -661,6 +702,7 @@ margin-bottom: 60px;
     background-image: url('../resources/burger.png');
     background-repeat: no-repeat;
     z-index: 100;
+    cursor: pointer;
   }
 
  .burger-btn_open {
@@ -1097,11 +1139,8 @@ justify-content: space-between;  }
     letter-spacing: -0.03em;  
     }
     
-    .contacts__phone-box {
-      position: absolute;
-    }
     
-    .contacts__phone-box:before{
+    .contacts__phone:before{
       width: 18px;
       height: 18px;
       left: -5px;
@@ -1114,11 +1153,8 @@ justify-content: space-between;  }
     letter-spacing: -0.03em;
     }
     
-    .contacts__email-box {
-      position: absolute;
-    }
     
-    .contacts__email-box::before {
+    .contacts__email:before {
       width: 18px;
       height: 18px;
       left: -5px;
@@ -1127,7 +1163,7 @@ justify-content: space-between;  }
 
     .row_contacts {
       flex-direction: column;
-      gap: 114px;}
+      gap: 58px;}
 
       .footer {
         height: 100%;
